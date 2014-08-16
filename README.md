@@ -17,8 +17,13 @@ Changelog:
 8/15/2014
 -------------
 Got around to actually making a repo.
+
 Map: First draft, most things are in the right place, boss arenas are probably the right size.
+
 Triggers: None whatsoever
+
 Scripting: Zilch
+
 Models and textures: Nope
+
 Sounds: Nothing doing

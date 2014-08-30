@@ -13,6 +13,19 @@ ARTISTS WILLING TO WORK ON ANIMATIONS/MODELS/TEXTURES/SOUNDS FOR TOUHOU CHARACTE
 
 Changelog:
 ===========
+8/29/2014
+-------------
+So I'm really bad at pushing, too.
+
+Map: Finished defining lanes, round 1 of hero clip zones placed. Probably needs more hero_clip.
+
+Triggers: Warps operational, but not placed in map
+
+Scripting: Major progress. Iku 3/9 implemented, warp code functional.
+
+Models and textures: Still nope. Probably should hack from WC3 at some point...
+
+Sounds: Nope.
 
 8/15/2014
 -------------

@@ -1,0 +1,14 @@
+"AddonInfo"
+{
+	"addonSteamAppID"	"816"
+	"addontitle"	"Scarlet Devil Mansion Defense"
+	"addonversion"	"0.001"
+	"addontagline"	"UNFINISHED"
+	"addonauthor"	"Misty Lake Progress Group"
+	"addonSteamGroupName"	""
+	"addonauthorSteamID"	""
+	"addonContent_Campaign"	"0"
+	"addonURL0"	"https://github.com/nob8/SDMD-Renewed"
+	"addonDescription"	"WIP"
+	"local" "1"
+}

@@ -1,0 +1,110 @@
+
+//SDMD items:
+// Kodachi 2200, Encyclopedia 4000, Good Folding stool 10000, silver knife 5000, oar 10000
+// Health potion s/m/l 100/1000/3500, mana potion s/m/l 150/1500/5250, restoration potion s/m/l 600/7200/12000, bloody tea 1000
+// PAD 3000, Apron 5000, Red Ribbon 7200, Swimsuit 6500
+// Tengu amulet 1000, Witch's broom 10000, Hakurei Shrine Donation box 4000, Tengu treasure 7000, hakurei amulet 1500
+//Loincloth 42000, geta 38500, rinnosuke's glasses 36000, Lily of the valley 100000, Mystical grindstone 50000, silk 50000, mortar 5000, Kindling 3000
+//Sweet potato 4000, sweet grapes 2500, grape wine 25000, roasted sweet potatoes 30000
+
+//SDMD Recipes:
+//Lunar Anti-gravity Device= Demon Wings+Treasure Stool Sarirra+Kappa's high tech goggles
+//Maid Outfit=PAD+apron
+//Shrine Maiden outfit=Red Ribbon+apron
+//Gatekeeper's cap=Swimsuit+2xloincloth
+//cute red glasses=rinnosuke's glasses+red ribbon
+//SDM Maid outfit = maid outfit+Silk
+//UPG shrine maiden outfit = shrine maiden outfit+silk
+//Div. Maiden outfit = UPG shrine maiden outfit+gohei+Hakurei shrine donation box+silk
+//Chief maid outfit=SDM maid outfit+longsword+silk
+//Cheongsam=Gatekeeper's cap+PAD+silk
+//Kappa's goggles=Rinnosuke's glassesx2+Tengu treasure
+//Demon Wings=Magical Longswordx2+Magic Broom
+//Shinigami's Oar=Loincloth+Geta+Rinnosuke's glasses+Oar+Good folding stool
+//Tengu fan=Tengu amuletx3+getax2
+//Magical longsword=tengu amulet+kodachi+mystical grindstone
+//Gohei=Silver knife+encyclopedia+good folding stool+Hakurei amulet
+//Genji doll=Hakurei donation box+red ribbon+silk
+//Shinigami's scythe=Death's sigh+shinigami's oar+mystical grindstonex2
+
+
+"DOTAAbilities"
+{
+	//=================================================================================================================
+	// Recipe: Arcane Boots
+	//=================================================================================================================
+	"item_recipe_arcane_boots2"
+	{
+		"ID"							"1005"
+
+		"BaseClass"						"item_recipe_arcane_boots"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"0"	
+		"ItemShopTags"					""
+		
+		// Recipe
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_arcane_boots2"
+		"ItemRequirements"
+		{
+			"01"						"item_energy_booster;item_arcane_boots"
+		}
+	}
+	
+	//=================================================================================================================
+	// Arcane Boots II
+	//=================================================================================================================
+	"item_arcane_boots2"
+	{
+		"ID"							"1006"
+
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+		"BaseClass"						"item_arcane_boots"
+
+		// Stats		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"55.0"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"25"
+		"ItemCost"						"2450"
+		"ItemShopTags"					"move_speed;boost_mana;mana_pool"
+		"ItemQuality"					"rare"
+		"ItemDeclarations"				"DECLARE_PURCHASES_TO_SPECTATORS"
+		"ItemDisassembleRule"			"0"
+		"ItemAlertable"					"1"
+		"ItemAliases"					"mana;mb"
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_movement"		"75"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_mana"			"500"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"replenish_radius"		"600"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"replenish_amount"		"250"
+			}
+		}
+	}
+}

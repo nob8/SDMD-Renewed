@@ -4,8 +4,8 @@
 // Health potion s/m/l 100/1000/3500, mana potion s/m/l 150/1500/5250, restoration potion s/m/l 600/7200/12000, bloody tea 1000
 // PAD 3000, Apron 5000, Red Ribbon 7200, Swimsuit 6500
 // Tengu amulet 1000, Witch's broom 10000, Hakurei Shrine Donation box 4000, Tengu treasure 7000, hakurei amulet 1500
-//Loincloth 42000, geta 38500, rinnosuke's glasses 36000, Lily of the valley 100000, Mystical grindstone 50000, silk 50000, mortar 5000, Kindling 3000
-//Sweet potato 4000, sweet grapes 2500, grape wine 25000, roasted sweet potatoes 30000
+// Loincloth 42000, geta 38500, rinnosuke's glasses 36000, Lily of the valley 100000, Mystical grindstone 50000, silk 50000, mortar 5000, Kindling 3000
+// Sweet potato 4000, sweet grapes 2500, grape wine 25000, roasted sweet potatoes 30000
 
 //SDMD Recipes:
 //Lunar Anti-gravity Device= Demon Wings+Treasure Stool Sarirra+Kappa's high tech goggles
@@ -27,9 +27,891 @@
 //Genji doll=Hakurei donation box+red ribbon+silk
 //Shinigami's scythe=Death's sigh+shinigami's oar+mystical grindstonex2
 
-
+//======================================================
+// Normal items occupy IDs 1xxx
+// Ability shop items occupy IDs 2xxx
+//======================================================
 "DOTAAbilities"
 {
+	//=================================================================================================================
+	// Ability Items
+	//=================================================================================================================
+	"item_ability_iku_veils"
+	{
+		"ID"							"2000"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"5"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_iku_thunder_drum"
+	{
+		"ID"							"2001"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"5"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_iku_swimming_thunder"
+	{
+		"ID"							"2002"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"15"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_iku_lightning"
+	{
+		"ID"							"2003"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"35"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_iku_swimming_oarfish"
+	{
+		"ID"							"2004"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"70"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_alice_shanghai"
+	{
+		"ID"							"2005"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"5"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_alice_london"
+	{
+		"ID"							"2006"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"5"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_alice_hourai"
+	{
+		"ID"							"2007"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"5"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+
+	"item_ability_alice_dutch"
+	{
+		"ID"							"2008"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"5"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_alice_party"
+	{
+		"ID"							"2009"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"15"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_alice_bunraku"
+	{
+		"ID"							"2010"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"35"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_alice_holy_gun"
+	{
+		"ID"							"2011"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"70"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_tenshi_divine_sword"
+	{
+		"ID"							"2012"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"5"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_tenshi_spirit_stone"
+	{
+		"ID"							"2013"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"5"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_tenshi_scarlet_weather"
+	{
+		"ID"							"2014"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"15"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_tenshi_enlightenment"
+	{
+		"ID"							"2015"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"5"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_tenshi_worry_joy"
+	{
+		"ID"							"2016"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"70"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_suika_purple_power"
+	{
+		"ID"							"2017"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"5"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_suika_conflagration"
+	{
+		"ID"							"2018"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"5"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_suika_demon_mist"
+	{
+		"ID"							"2019"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"5"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_suika_drunken_fog"
+	{
+		"ID"							"2020"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"5"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_suika_knockout"
+	{
+		"ID"							"2021"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"15"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_suika_gaki_binding"
+	{
+		"ID"							"2022"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"35"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_suika_massacre"
+	{
+		"ID"							"2023"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"70"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_reimu_border"
+	{
+		"ID"							"2024"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"5"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_reimu_rift"
+	{
+		"ID"							"2025"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"5"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_reimu_soul"
+	{
+		"ID"							"2026"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"5"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_reimu_pearl"
+	{
+		"ID"							"2027"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"15"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_reimu_cure"
+	{
+		"ID"							"2028"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"15"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_reimu_seal"
+	{
+		"ID"							"2029"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"35"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_reimu_barrier"
+	{
+		"ID"							"2030"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"35"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_reimu_great_border"
+	{
+		"ID"							"2031"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"70"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_marisa_stardust"
+	{
+		"ID"							"2032"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"5"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_marisa_trigram"
+	{
+		"ID"							"2033"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"5"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_marisa_orrery"
+	{
+		"ID"							"2034"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"15"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_marisa_bomb"
+	{
+		"ID"							"2035"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"35"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_marisa_master"
+	{
+		"ID"							"2036"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"70"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_marisa_blazing"
+	{
+		"ID"							"2037"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"70"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_sakuya_killing_doll"
+	{
+		"ID"							"2038"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"5"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_sakuya_silver_bound"
+	{
+		"ID"							"2039"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"5"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_sakuya_ricochet"
+	{
+		"ID"							"2040"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"15"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_sakuya_lunar"
+	{
+		"ID"							"2041"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"35"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_sakuya_soul"
+	{
+		"ID"							"2042"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"35"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_sakuya_world"
+	{
+		"ID"							"2043"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"70"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_meiling_pulse"
+	{
+		"ID"							"2044"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"5"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_meiling_roc"
+	{
+		"ID"							"2045"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"5"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_meiling_three_hit"
+	{
+		"ID"							"2046"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"5"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_meiling_radiant"
+	{
+		"ID"							"2047"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"5"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_meiling_colorful_light"
+	{
+		"ID"							"2048"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"15"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_meiling_earth_sky"
+	{
+		"ID"							"2049"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"15"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_meiling_tiger_strength"
+	{
+		"ID"							"2050"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"35"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_meiling_tai_ji"
+	{
+		"ID"							"2051"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"35"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_meiling_great_roc"
+	{
+		"ID"							"2052"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"70"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_patchouli_photosynthesis"
+	{
+		"ID"							"2053"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"5"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_patchouli_harvester"
+	{
+		"ID"							"2054"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"5"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_patchouli_winter"
+	{
+		"ID"							"2055"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"5"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_patchouli_elmos"
+	{
+		"ID"							"2056"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"15"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_patchouli_selene"
+	{
+		"ID"							"2057"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"35"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_patchouli_devil"
+	{
+		"ID"							"2058"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"35"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_patchouli_flare"
+	{
+		"ID"							"2059"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"70"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_patchouli_philosophers"
+	{
+		"ID"							"2060"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"70"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_flandre_feast"
+	{
+		"ID"							"2061"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"5"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_flandre_four"
+	{
+		"ID"							"2062"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"5"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_flandre_laevatainn"
+	{
+		"ID"							"2063"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"15"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_flandre_laevatainn"
+	{
+		"ID"							"2064"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"35"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_flandre_catadioptric"
+	{
+		"ID"							"2065"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"35"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_flandre_secret_barrage"
+	{
+		"ID"							"2066"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"70"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_flandre_ripples"
+	{
+		"ID"							"2067"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"70"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_remilia_rhapsody"
+	{
+		"ID"							"2068"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"5"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_remilia_cradle"
+	{
+		"ID"							"2069"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"5"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_remilia_castle"
+	{
+		"ID"							"2070"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"15"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_remilia_gugnir"
+	{
+		"ID"							"2071"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"35"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+	
+	"item_ability_remilia_crimson"
+	{
+		"ID"							"2072"
+
+		"BaseClass"						"item_datadriven"
+
+		"ItemCost"						"70"
+		"ItemShopTags"					""
+
+		"ItemRecipe"					"0"
+	}
+
 	//=================================================================================================================
 	// Recipe: Arcane Boots
 	//=================================================================================================================

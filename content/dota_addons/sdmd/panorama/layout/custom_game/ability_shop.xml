@@ -1,0 +1,23 @@
+<root>
+	<styles>
+		<include src="file://{resources}/styles/dotastyles.css" />
+		<include src="file://{resources}/styles/custom_game/action_bar.css" />
+		<include src="file://{resources}/styles/custom_game/ability_shop.css" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/scripts/custom_game/action_bar.js"/>
+		<include src="file://{resources}/scripts/custom_game/ability_shop_populate.js"/>
+	</scripts>
+	<Panel class="AbilityShopRoot">
+		<Label class="TitleFont" text="Scarlet Devil Mansion Library"/>
+		<Panel id="Wrapper" style="flow-children: down;">
+			<Button id="RepopulateShopButton" class="ButtonClass" onactivate="UpdateAbilityShop()">
+				<Panel id="RepopulateShopButtonInset">
+					<Label text="Repopulate" />
+				</Panel>
+			</Button>
+			<Panel id="AbilityShop"/>
+		</Panel>
+	</Panel>
+</root>
+

@@ -70,7 +70,7 @@ function iku_orb_attack(trigger)
 end
 
 function iku_cast_veils(trigger)
-	GameRules:SendCustomMessage("Veils cast at "..tostring(iku_charge_pct).."%.", trigger.caster:GetTeamNumber(), 1)
+	--GameRules:SendCustomMessage("Veils cast at "..tostring(iku_charge_pct).."%.", trigger.caster:GetTeamNumber(), 1)
 	printargs(trigger)
 	printargs(trigger.ability)
 	if(iku_charge_pct==nil) then
@@ -79,15 +79,14 @@ function iku_cast_veils(trigger)
 	if(iku_charge_pct >= 20) then
 		print("Enough charge.")
 		trigger.ability:OnChannelFinish(true)
-		--trigger.caster:AddNewModifier(trigger.caster, trigger.ability, "iku_veils_buff", {})
+		iku_charge_pct = iku_charge_pct - 20
+		GameRules:SendCustomMessage("Cast veils of sky. Current charge is now "..tostring(iku_charge_pct), trigger.caster:GetTeamNumber(), 1)
 	else
 		print("Insufficient Charge: "..tostring(iku_charge_pct))
-		GameRules:SendCustomMessage("Veils cast at "..tostring(iku_charge_pct).."%.", trigger.caster:GetTeamNumber(), 1)
-		GameRules:SendCustomMessage("Insufficient charge.", trigger.caster:GetTeamNumber(), 1)
+		GameRules:SendCustomMessage("Insufficient charge ("..tostring(iku_charge_pct).."%).", trigger.caster:GetTeamNumber(), 1)
 		trigger.ability:RefundManaCost()
 		trigger.ability:EndCooldown()
 	end
-	GameRules:SendCustomMessage("Veils ended at "..tostring(iku_charge_pct).."%.", trigger.caster:GetTeamNumber(), 1)
 end
 
 
@@ -97,7 +96,6 @@ function iku_apply_veils_buff(trigger)
 	bonusAGI = trigger.caster:GetBaseAgility()*(trigger.ability:GetLevel()-1)
 	--trigger.caster:SetBaseAgility(trigger.caster:GetBaseAgility()*trigger.ability:GetLevel())
 	trigger.caster:ModifyAgility(bonusAGI)
-
 end
 
 function iku_remove_veils_buff(trigger)

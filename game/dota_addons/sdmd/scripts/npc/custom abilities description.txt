@@ -80,7 +80,7 @@ Innate- Divine Turtle "Genji": Summons GENJIIIII: 800/1100/1800/2300/3300/4500/6
 70- Border Sign "Great Illusory Border": All enemies' attack reduced 15/30/45%, attack speed reduced 30/60/90%, movement speed reduced 18/33/50%
 
 Marisa
-Innate- Magic Sign "Stardust Reverie": AOE CONE: Deals 40 damage every 0.25 seconds for 2 seconds
+Innate- Magic Sign "Asteroid Belt": AOE CONE: Deals 40 damage every 0.25 seconds for 2 seconds
 
 5- Magic Sign "Stardust Reverie": Dashes to targeted point, dealing 90/180/270/360/450/540 damage. Max range 550/650/750/850/950/1050.
 

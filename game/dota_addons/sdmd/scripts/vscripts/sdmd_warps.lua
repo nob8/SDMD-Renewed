@@ -1,34 +1,29 @@
 --/////////////////////////////////////////////////////////////////////////////
 --// AREA TRANSITION FUNCTIONS
 --/////////////////////////////////////////////////////////////////////////////
+warplocations = {}
 function Activate()
 	print("Initializing sdmd_warps.lua")
+	warplocations.GateBox_Mansion = GetGroundPosition(Vector(2304,7350,128), nil)
+	warplocations.GateBox_Exterior = GetGroundPosition(Vector(-5440,2450,128), nil)
+	warplocations.AbilityShopBox_Mansion = GetGroundPosition(Vector(-3840,6528,128), nil)
+	warplocations.AbilityShopBox_Shop = GetGroundPosition(Vector(-3840,4608,128), nil)
 end
-
+warp_strings = { "GateBox_Mansion", "GateBox_Exterior", "AbilityShopBox_Mansion", "AbilityShopBox_Shop"}
 function warp(trigger)
 	local inspect = require 'inspect'
 	print(trigger.activator)
 	print(trigger.caller)
-	print("Trigger info contains:")
-	--print(inspect(trigger, {depth=4}))
-	--assert(io.open("C:\\Users\\Nick\\Downloads\\debugstuff.txt", 'w')):write(inspect(trigger))
-	if(trigger.caller==Entities:FindByName(nil, "GateBox_Mansion")) then
-		print("Trigger identified as GateBox_Mansion")
-		local test=GetGroundPosition(Vector(2304,7350,128), trigger.activator)
-		print("Moving unit to:")
-		print(test)
-		local unit = trigger.activator
-		FindClearSpaceForUnit(unit, test, true)
-		unit:Stop()
-
-	elseif(trigger.caller==Entities:FindByName(nil, "GateBox_Exterior")) then
-		print("Trigger identified as GateBox_Exterior")
-		local test=GetGroundPosition(Vector(-5440,2450,128), trigger.activator)
-		print("Moving unit to:")
-		print(test)
-		local unit = trigger.activator
-		FindClearSpaceForUnit(unit, test, true)
-		unit:Stop() 
+	--print_r(trigger)
+	local warpname = ""
+	for i=0, #warp_strings do
+		if(trigger.caller == Entities:FindByName(nil, warp_strings[i])) then
+			warpname = warp_strings[i]
+		end
 	end
+	print("Accessing warplocations with " .. warpname)
+	print(warplocations[warpname])
+	print(warplocations.AbilityShopBox_Mansion)
+	FindClearSpaceForUnit(trigger.activator, warplocations[warpname], true)
+	trigger.activator:Stop()
 end
-

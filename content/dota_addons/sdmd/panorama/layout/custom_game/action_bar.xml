@@ -1,0 +1,33 @@
+<root>
+	<styles>
+		<include src="file://{resources}/styles/dotastyles.css" />
+		<include src="file://{resources}/styles/custom_game/action_bar.css" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/scripts/custom_game/action_bar.js" />
+	</scripts>
+	<Panel class="AbilityOverlayRoot">
+		<Panel id="Scroller" style="flow-children: down; overflow: squish scroll; height: 200px;">
+			<Label text="Imagine a bunch of lines of text here." />
+			<Label text="Enough to require a scrollbar." />
+			<Label text="..." />
+			<Label text="..." />
+			<Label text="..." />
+			<Label text="..." />
+			<Label text="..." />
+			<Label text="..." />
+			<Label text="..." />
+			<Label text="..." />
+			<Button id="ScrollToTopButton" class="ButtonClass" onactivate="ScrollToTop()">
+  				<Label text="Scroll to Top" />
+			</Button>
+		</Panel>
+		<Button id="LevelUpButton" onactivate="OnLevelUpClicked()">
+			<Panel id="LevelUpButtonInset">
+				<Label text="#LevelUp" />
+			</Panel>
+		</Button>
+		<Panel id="ability_list" />
+	</Panel>
+</root>
+

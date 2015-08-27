@@ -5,12 +5,11 @@
 		<include src="file://{resources}/styles/custom_game/ability_shop.css" />
 	</styles>
 	<scripts>
-		<include src="file://{resources}/scripts/custom_game/action_bar.js"/>
-		<include src="file://{resources}/scripts/custom_game/ability_shop_populate.js"/>
+		<include src="file://{resources}/scripts/custom_game/ability_shop.js"/>
 	</scripts>
 	<Panel class="AbilityShopRoot">
 		<Label class="TitleFont" text="Scarlet Devil Mansion Library"/>
-		<Panel id="Wrapper" style="flow-children: down;">
+		<Panel id="Wrapper" hittest="false" style="flow-children: down;">
 			<Button id="RepopulateShopButton" class="ButtonClass" onactivate="UpdateAbilityShop()">
 				<Panel id="RepopulateShopButtonInset">
 					<Label text="Repopulate" />

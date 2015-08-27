@@ -1,0 +1,43 @@
+"iku_dragonfish_robe"
+{
+	//General
+	"BaseClass"		"ability_datadriven"
+	"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE | DOTA_ABILITY_BEHAVIOR_AUTOCAST | DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_ATTACK"
+	"MaxLevel"		"7"
+	"AbilityTexture"	"razor_plasma_field"
+	"AbilityUnitTargetTeam"     "DOTA_UNIT_TARGET_TEAM_ENEMY"
+	"AbilityUnitTargetType"     "DOTA_UNIT_TARGET_ALL | DOTA_UNIT_TARGET_COURIER"
+	"AbilityCastPoint"          "0.0"
+	"AbilityCastRange"          "900"
+	"AbilityCooldown"           "0"
+	"AbilityManaCost"			"0"
+
+	//Events
+
+	
+	//Modifiers
+	"Modifiers"
+	{
+		"iku_robe_orb"
+		{
+			"Passive"	"1"
+			"IsHidden"	"1"
+			"TextureName"	"razor_plasma_field"
+			"Orb"
+			{
+				"Priority"	"DOTA_ORB_PRIORITY_ABILITY"
+				"ProjectileName"	"particles/units/heroes/hero_disruptor/disruptor_ambient_glow.vpcf"
+				"CastAttack"		"1"
+			}
+			"OnOrbFire"
+			{
+				"RunScript"
+				{
+					"Target"		"TARGET"
+					"ScriptFile"	"sdmd_abilities.lua"
+					"Function"		"iku_orb_attack"
+				}
+			}
+		}
+	}
+}

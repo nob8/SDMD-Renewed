@@ -1,0 +1,81 @@
+//---------------------------------------------------------------------------------------------------------------------
+//5- Angel's Raiment "Veils Like the Sky": Uses electrical charge to increase Iku's attack speed by 30/60/90/120/150/180% and agility by 1/2/3/4/5/6x, 
+//---------------------------------------------------------------------------------------------------------------------
+"iku_veils"
+{
+	//General
+	"BaseClass"		"ability_datadriven"
+	"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_NO_TARGET  | DOTA_ABILITY_IMMEDIATE "//| DOTA_ABILITY_BEHAVIOR_NOT_LEARNABLE"
+	"MaxLevel"		"6"
+	"AbilityTexture"	"razor_unstable_current"
+	"AbilityCastPoint"          "0.0"
+	"AbilityCooldown"           "20"
+	"AbilityManaCost"			"60 90 120 150 180 220"
+
+	//Events
+	"OnSpellStart"
+	{
+		"RunScript"
+		{
+			"Target"	"CASTER"
+			"ScriptFile"	"sdmd_abilities.lua"
+			"Function"		"iku_cast_veils"
+		}
+	}
+
+	"OnChannelFinish"
+	{
+		"ApplyModifier"
+		{
+			"Target"		"CASTER"
+			"ModifierName"	"iku_veils_buff"
+		}
+	}
+
+	//Special
+	"AbilitySpecial"
+	{
+		"01"
+		{
+			"var_type"	"FIELD_INTEGER"
+			"duration"	"6 8 10 12 14 16"
+		}
+		"01"
+		{
+			"var_type"	"FIELD_INTEGER"
+			"atkbonus"	"60 90 120 150 180 220"
+		}
+	}
+
+	//Modifiers
+	"Modifiers"
+	{
+		"iku_veils_buff"
+		{
+			"Duration"	"%duration"
+			"TextureName"	"razor_unstable_current"
+			"OnCreated"
+			{
+				"RunScript"
+				{
+					"Target"		"CASTER"
+					"ScriptFile"	"sdmd_abilities.lua"
+					"Function"		"iku_apply_veils_buff"
+				}
+			}
+			"OnDestroy"
+			{
+				"RunScript"
+				{
+					"Target"		"CASTER"
+					"ScriptFile"	"sdmd_abilities.lua"
+					"Function"		"iku_remove_veils_buff"
+				}
+			}
+			"Properties"
+			{
+				"MODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT"	"%atkbonus"
+			}
+		}
+	}
+}

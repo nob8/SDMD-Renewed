@@ -182,7 +182,7 @@ _LogDeepprint_alreadyseen = {}
 
 
 -- the inner recursion for the LogDeep print
-function _LogDeepToString(debugInstance, prefix) 
+function _LogDeepToString(debugInstance, prefix)
     local string_accum = ""
     if debugInstance == nil then 
         return "LogDeep Print of NULL" .. "\n"
@@ -223,7 +223,7 @@ end
 
 scripthelp_LogDeepString = "Convert a class/array/instance/table to a string"
 
-function LogDeepToString(debugInstance, prefix) 
+function LogDeepToString(debugInstance, prefix)
     prefix = prefix or ""
     _LogDeepprint_alreadyseen = {}
     table.insert(_LogDeepprint_alreadyseen, debugInstance)

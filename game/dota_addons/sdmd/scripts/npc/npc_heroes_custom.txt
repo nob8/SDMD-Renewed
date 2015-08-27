@@ -1,20 +1,71 @@
-// Dota Heroes File
-// NOTE: This is not for creating new heroes, this is for taking a currently existing hero as a template and overriding
-// the specified key-value combinations.  Use override_hero <hero_to_override> for this.
 "DOTAHeroes"
 {
 	//=================================================================================================================
 	// IKU
 	//=================================================================================================================
-	"iku_nagae"
+	"iku"
 	{
 		"override_hero"				"npc_dota_hero_beastmaster"			// Hero to override
+
+		// Abilities
+		"AbilityLayout"				"6"
 		"Ability1"					"iku_dragonfish_robe"		// Ability 1
-		"Ability2"					"iku_veils_like_sky"
-		"Ability3"					"AUTOLEVEL0"
-		"Ability4"					"ultimate_power"
-		"Ability5"					"templar_assassin_refraction_holdout"
+		"Ability2"					"iku_veils"
+		"Ability3"					"iku_thunder_drum"
+		"Ability4"					"iku_swimming_thunder"
+		"Ability5"					"iku_lightning"
 		"Ability7"					"iku_charge_counter"
-		"VisionNighttimeRange"		"1800"										// Range of vision at night time.
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"0"
+		"MagicalResistance"			"0"
+		
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_RANGED_ATTACK"
+		"AttackDamageMin"			"2.0"
+		"AttackDamageMax"			"8.0"
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackRate"				"1.25"
+		"AttackAnimationPoint"		"0.55"
+		"AttackAcquisitionRange"	"650.00"
+		"AttackRange"				"630"
+		"ProjectileModel"			"particles/units/heroes/hero_disruptor/disruptor_base_attack.vpcf"	 //Add projectile
+		"ProjectileSpeed"			"1000"
+		
+		// Attributes
+		//----------------------------------------------------------------
+		"AttributePrimary"			"DOTA_ATTRIBUTE_AGILITY"
+		"AttributeBaseStrength"		"25"
+		"AttributeStrengthGain"		"9.20"
+		"AttributeBaseIntelligence"	"22"
+		"AttributeIntelligenceGain"	"6.80"
+		"AttributeBaseAgility"		"32"
+		"AttributeAgilityGain"		"14.00"
+		
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_GROUND"
+		"MovementSpeed"				"370"
+		"MovementTurnRate"			"0.5"
+		
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"100"
+		"StatusHealthRegen"			"0.25"
+		"StatusMana"				"0"
+		"StatusManaRegen"			"0.01"
+		"StatusStartingMana"		"200"
+		
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"1800"
+		"VisionNighttimeRange"		"800"
+
+		//Fancy classes
+		//----------------------------------------------------------------
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_HERO"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_HERO"
+		"UnitRelationShipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_DEFAULT"
 	}
 }

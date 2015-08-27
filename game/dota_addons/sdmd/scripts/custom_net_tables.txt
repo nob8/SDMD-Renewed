@@ -2,6 +2,7 @@
  {
     custom_net_tables =
     [
-        "ability_shop_data"
+        "ability_shop_data",
+        "team_information"
     ]
 }

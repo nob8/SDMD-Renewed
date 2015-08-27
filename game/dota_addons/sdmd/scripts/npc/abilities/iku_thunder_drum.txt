@@ -1,0 +1,23 @@
+//5- Electric Sign "Thunder Drum Shot": Fires a ball of electricity at the targeted location that deals 180/350/550/800/1100/1450 damage (AOE 600)
+
+"iku_thunder_drum"
+{
+	// General
+	//-------------------------------------------------------------------------------------------------------------
+	"BaseClass"             "ability_datadriven"
+	"AbilityBehavior"       "DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT"
+	"AbilityUnitTargetTeam" "DOTA_UNIT_TARGET_TEAM_ENEMY"
+	"AbilityUnitTargetType" "DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+	"AbilityTextureName"    "razor_unstable_current"
+	"MaxLevel"		"6"
+	"AbilityCastPoint"	"0.2"
+	"AbilityCoolDown"	"20"
+	"AbilityManaCost"	"200"
+
+	//Events
+	"OnSpellStart"
+	{
+		
+	}
+
+}

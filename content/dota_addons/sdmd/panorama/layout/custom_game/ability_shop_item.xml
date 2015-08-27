@@ -1,0 +1,24 @@
+<root>
+	<styles>
+		<include src="file://{resources}/styles/dotastyles.css" />
+		<include src="file://{resources}/styles/custom_game/ability_shop.css" />
+	</styles>
+	<scripts>
+		<include src="file://{resources}/scripts/custom_game/ability_shop_item.js" />
+	</scripts>
+	<Panel class="ShopItemPanel">
+		<Panel id="ButtonAndImage">
+			<Button id="AbilityButton"
+					onmouseover="AbilityShowTooltip()"
+					onmouseout="AbilityHideTooltip()"
+					onactivate="ActivateAbility()"
+					oncontextmenu="RightClickAbility()"
+					>
+				<DOTAAbilityImage id="AbilityImage" />
+				<Label id="ManaCost" />
+			</Button>
+		</Panel>
+	</Panel>
+</root>
+
+

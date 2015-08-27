@@ -1,0 +1,32 @@
+﻿"lang"
+{
+	"Language"		"English"
+	"Tokens"
+	{		
+		"addon_game_name"			"Scarlet Devil Mansion Defense"
+
+		"DOTA_Tooltip_ability_iku_dragonfish_robe"                                        "Dragonfish's Robe"
+		"DOTA_Tooltip_ability_iku_dragonfish_robe_Description"                            "Consumes mana to deal bonus damage when attacking. Piercing damage taken is reduced."
+		"DOTA_Tooltip_ability_iku_dragonfish_robe_Note0"								  "Dealing damage with Dragonfish's Robe builds electrical charge used to power Iku's other abilities."
+		"DOTA_Tooltip_ability_iku_dragonfish_robe_int_as_damage"						  "%INTELLIGENCE AS DAMAGE:\n"
+		"DOTA_Tooltip_ability_iku_dragonfish_robe_charge_generation"					  "%CHARGE PCT GENERATED:\n"
+		"DOTA_Tooltip_ability_iku_dragonfish_robe_pierce_damage_reduction"				  "%PIERCING DAMAGE REDUCTION:\n"
+
+
+		"DOTA_Tooltip_ability_iku_veils"                                                  "Veils Like the Sky"
+		"DOTA_Tooltip_ability_iku_veils_Description"                                      "Uses electrical charge to increase Iku's attack speed and agility"
+		"DOTA_Tooltip_ability_iku_veils_duration"                                         "DURATION:\n"
+		"DOTA_Tooltip_ability_iku_veils_atkbonus"                                         "ATTACK SPEED BONUS:\n"
+		"DOTA_Tooltip_ability_iku_veils_agibonus"                                         "%BASE AGILITY PERCENT BONUS:"
+
+		"DOTA_Tooltip_iku_charge_count_buff"                                              "Charge Count"
+		"DOTA_Tooltip_iku_charge_count_buff_Description"                                  "The total electrical charge Iku has stored"
+
+		"DOTA_Tooltip_iku_veils_buff"                                                     "Veils like the sky"
+		"DOTA_Tooltip_iku_veils_buff_Description"                                         "Iku has greatly increased attack speed"
+
+		"DOTA_Tooltip_ability_iku_thunder_drum"											  "Thunder Drum Shot"
+		"DOTA_Tooltip_ability_iku_thunder_drum_Description"								  "Fires a ball of electricity at the targeted location that deals damage to targets around it"
+		"DOTA_Tooltip_ability_iku_thunder_drum_damage"									  "DAMAGE:"
+	}
+}
